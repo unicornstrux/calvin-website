@@ -17,14 +17,16 @@ $(window).on('load', function() {
 	/*------------------
 		PORTFOLIO
 	--------------------*/
-	var $container = $('.portfolio-grid');
-	$container.isotope({ itemSelector: '.grid-item', layoutMode: 'fitRows' });
-
 	$('.pf-btn').on('click', function() {
 		$('.pf-btn').removeClass('active');
 		$(this).addClass('active');
 		var selector = $(this).data('filter');
-		$container.isotope({ filter: selector });
+		if (selector === '*') {
+			$('.grid-item').css('display', '');
+		} else {
+			$('.grid-item').css('display', 'none');
+			$('.grid-item' + selector).css('display', '');
+		}
 	});
 
 });

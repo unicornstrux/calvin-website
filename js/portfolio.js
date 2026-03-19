@@ -49,4 +49,10 @@
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closePanel();
   });
+
+  window.addEventListener('resize', function() {
+    if (!panel.classList.contains('open')) {
+      document.body.style.overflow = '';
+    }
+  });
 })();
