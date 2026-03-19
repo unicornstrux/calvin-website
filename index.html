@@ -76,197 +76,165 @@
 
 
 
-	<!-- ==== Portfolio Section Start ==== -->
-	<section class="portfolio-section fix" id="portfolio">
-		<div class="container-fluid pt100">
-			<div class="stitle mb70">
-				<h2>Latest Projects</h2>
-			</div>
+<!-- ==== Portfolio Section Start ==== -->
+<section class="portfolio-section fix" id="portfolio">
+  <div class="portfolio-header">
+    <div class="portfolio-filter-wrap">
+      <button class="pf-btn active" data-filter="*">All</button>
+      <button class="pf-btn" data-filter=".eng">Engineering</button>
+      <button class="pf-btn" data-filter=".indi">Hobbies</button>
+    </div>
+  </div>
 
-			<ul class="portfolio-filter mb40">
-				<li class="filter" data-filter="*">ALL</li>
-				<li class="filter" data-filter=".eng">ENGINEERING</li>
-				<li class="filter" data-filter=".arch">ARCHITECTURE AND CONSTRUCTION</li>
-				<li class="filter" data-filter=".indi">HOBBIES</li>
-			</ul>
+  <div class="portfolio-grid isotope_items">
 
-			<div class="row isotope_items">
-				<!-- Work item -->	
-				<div class="nopad col-md-4 col-sm-6 col-xs-12 eng">
-					<a class="work-item default-popup" href="img/works/large/td.jpg">
-						<img src="img/works/td.jpg" alt="">
-						<div class="work-inner">
-							<div class="work-info">
-								<h2>Thermodenduder</h2>
-								<h3>Instrument R and D</h3>
-							</div>	
-						</div>
-					</a>
-				</div>
-				<!-- Work item -->	
-				<div class="nopad col-md-4 col-sm-6 col-xs-12 eng">
-					<a class="work-item default-popup" href="img/works/large/concrete.jpg">
-						<img src="img/works/concrete.jpg" alt="">
-						<div class="work-inner">
-							<div class="work-info">
-								<h2>Strength vs Temperature in Concrete</h2>
-								<h3>Heat Transfer</h3>
-							</div>	
-						</div>
-					</a>
-				</div>
-				<!-- Work item -->	
-				<div class="nopad col-md-4 col-sm-6 col-xs-12 arch">
-					<a class="work-item default-popup" href="img/works/large/hillside.jpg">
-						<img src="img/works/hillside.jpg" alt="">
-						<div class="work-inner">
-							<div class="work-info">
-								<h2>Custom Home Design/h2>
-								<h3>Architecture</h3>
-							</div>	
-						</div>
-					</a>
-				</div>
-				<!-- Work item -->	
-				<div class="nopad col-md-4 col-sm-6 col-xs-12 eng">
-					<a class="work-item default-popup" href="img/works/large/latch.jpg">
-						<img src="img/works/latch.jpg" alt="">
-						<div class="work-inner">
-							<div class="work-info">
-								<h2>NASA Microgravity</h2>
-								<h3>Solid State Latch</h3>
-							</div>	
-						</div>
-					</a>
-				</div>
-				<!-- Work item -->	
-				<div class="nopad col-md-4 col-sm-6 col-xs-12 indi">
-					<a class="work-item default-popup" href="img/works/large/wood.jpg">
-						<img src="img/works/wood.jpg" alt="">
-						<div class="work-inner">
-							<div class="work-info">
-								<h2>Wood Design</h2>
-								<h3> </h3>
-							</div>	
-						</div>
-					</a>
-				</div>
-				<!-- Work item -->	
-				<div class="nopad col-md-4 col-sm-6 col-xs-12 indi">
-					<a class="work-item default-popup" href="img/works/large/rocket.jpg">
-						<img src="img/works/rocket.jpg" alt="">
-						<div class="work-inner">
-							<div class="work-info">
-								<h2>Rocket Press</h2>
-								<h3>Coffee Maker</h3>
-							</div>	
-						</div>
-					</a>
-				</div>
-				<!-- Work item -->	
-				<div class="nopad col-md-4 col-sm-6 col-xs-12 eng">
-					<a class="work-item default-popup" href="img/works/large/skids.jpg">
-						<img src="img/works/skids.jpg" alt="">
-						<div class="work-inner">
-							<div class="work-info">
-								<h2>Advanced Forward Osmosis Membrane</h2>
-								<h3>Water Treatment R and D</h3>
-							</div>	
-						</div>
-					</a>
-				</div>
-				<!-- Work item -->	
-				<div class="nopad col-md-4 col-sm-6 col-xs-12 indi">
-					<a class="work-item default-popup" href="img/works/large/sup.jpg">
-						<img src="img/works/sup.jpg" alt="">
-						<div class="work-inner">
-							<div class="work-info">
-								<h2>Stand Up Paddleboard</h2>
-								<h3>Wood and Composites</h3>
-							</div>	
-						</div>
-					</a>
-				</div>
-				<!-- Work item -->	
-				<div class="nopad col-md-4 col-sm-6 col-xs-12 eng">
-					<a class="work-item default-popup" href="img/works/large/busat.jpg">
-						<img src="img/works/busat.jpg" alt="">
-						<div class="work-inner">
-							<div class="work-info">
-								<h2>Small Satellite Development</h2>
-								<h3>Boston University</h3>
-							</div>	
-						</div>
-					</a>
-				</div>
+    <div class="grid-item eng"
+         data-title="Thermodenduder"
+         data-context="Instrument R&amp;D — Brechtel"
+         data-problem="[Add: 1-sentence problem description]"
+         data-built="[Add: 2-3 sentences describing what was built and how]"
+         data-tools="SolidWorks,Sheet Metal,Thermal Design">
+      <div class="card-image" style="background-image: url('img/works/td.jpg')"></div>
+      <div class="card-gradient"></div>
+      <div class="card-overlay">
+        <div class="card-overlay-content">
+          <h3 class="card-title">Thermodenduder</h3>
+          <p class="card-desc">Instrument R&amp;D — Brechtel</p>
+          <span class="card-tag">Engineering</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </div>
+    </div>
 
-				<!-- Work item -->	
-				<!-- <div class="nopad col-md-4 col-sm-6 col-xs-12 ill">
-					<a class="work-item content-popup" href="#workID-1">
-						<img src="img/works/1.jpg" alt="">
-						<div class="work-inner">
-							<div class="work-info">
-								<h2>Project Title</h2>
-								<h3>Graphics</h3>
-							</div>	
-						</div>
-						<div id="workID-1" class="mfp-hide work-popup">
-							<img src="img/works/1.jpg" alt="">
-							<div class="work-popup-content">
-								<h3>Project Title</h3>
-								<p>In media, which includes textual, audio, and visual content, free licensing schemes such as some of the licenses made by Creative Commons have allowed for the dissemination of works under a clear set of legal permissions.</p>
-							</div>
-						</div> 
-					</a>
-				</div> -->
+    <div class="grid-item eng"
+         data-title="Strength vs Temperature in Concrete"
+         data-context="Heat Transfer Research"
+         data-problem="[Add: 1-sentence problem description]"
+         data-built="[Add: 2-3 sentences describing what was built and how]"
+         data-tools="MATLAB,FEA,Thermal Modeling">
+      <div class="card-image" style="background-image: url('img/works/concrete.jpg')"></div>
+      <div class="card-gradient"></div>
+      <div class="card-overlay">
+        <div class="card-overlay-content">
+          <h3 class="card-title">Strength vs Temperature in Concrete</h3>
+          <p class="card-desc">Heat Transfer Research</p>
+          <span class="card-tag">Engineering</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </div>
+    </div>
 
-				<!-- Work item -->	
-				<!-- <div class="nopad col-md-4 col-sm-6 col-xs-12 fs">
-					<a class="work-item video-popup" href="https://www.youtube.com/watch?v=Xd0Ok-MkqoE">
-						<img src="img/works/3.jpg" alt="">
-						<div class="work-inner">
-							<div class="work-info">
-								<h2>Project Title</h2>
-								<h3>Branding</h3>
-							</div>	
-						</div>
-					</a>
-				</div> -->
-				<!-- Work item -->	
-				<!-- <div class="nopad col-md-4 col-sm-6 col-xs-12 fs">
-					<a class="work-item video-popup" href="https://www.youtube.com/watch?v=OJJDVHvotA4">
-						<img src="img/works/5.jpg" alt="">
-						<div class="work-inner">
-							<div class="work-info">
-								<h2>Project Title</h2>
-								<h3>Branding</h3>
-							</div>	
-						</div>
-					</a>
-				</div> -->
-				<!-- Work item -->	
-				<!-- <div class="nopad col-md-4 col-sm-6 col-xs-12 brand">
-					<a class="work-item content-popup" href="#workID-6">
-						<img src="img/works/6.jpg" alt="">
-						<div class="work-inner">
-							<div class="work-info">
-								<h2>Project Title</h2>
-								<h3>Branding</h3>
-							</div>	
-						</div>
-						<div id="workID-6" class="mfp-hide work-popup">
-							<img src="img/works/6.jpg alt="">
-							<div class="work-popup-content">
-								<h3>Project Title</h3>
-								<p>In media, which includes textual, audio, and visual content, free licensing schemes such as some of the licenses made by Creative Commons have allowed for the dissemination of works under a clear set of legal permissions.</p>
-							</div>
-						</div> 
-					</a>
-				</div> -->
-			</div>
-		</div>
-	</section>
-	<!-- ==== Portfolio Section End ==== -->
+    <div class="grid-item eng"
+         data-title="NASA Microgravity — Solid State Latch"
+         data-context="NASA Reduced Gravity Program — Boston University"
+         data-problem="[Add: 1-sentence problem description]"
+         data-built="[Add: 2-3 sentences describing what was built and how]"
+         data-tools="SolidWorks,Fabrication,Composites">
+      <div class="card-image" style="background-image: url('img/works/latch.jpg')"></div>
+      <div class="card-gradient"></div>
+      <div class="card-overlay">
+        <div class="card-overlay-content">
+          <h3 class="card-title">NASA Microgravity</h3>
+          <p class="card-desc">Solid State Latch — Boston University</p>
+          <span class="card-tag">Engineering</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item indi"
+         data-title="Wood Design"
+         data-context="Personal Project"
+         data-problem="[Add: 1-sentence problem description]"
+         data-built="[Add: 2-3 sentences describing what was built and how]"
+         data-tools="Woodworking,Design,Fabrication">
+      <div class="card-image" style="background-image: url('img/works/wood.jpg')"></div>
+      <div class="card-gradient"></div>
+      <div class="card-overlay">
+        <div class="card-overlay-content">
+          <h3 class="card-title">Wood Design</h3>
+          <p class="card-desc">Personal Project</p>
+          <span class="card-tag">Hobby</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item indi"
+         data-title="Rocket Press Coffee Maker"
+         data-context="Personal Project"
+         data-problem="[Add: 1-sentence problem description]"
+         data-built="[Add: 2-3 sentences describing what was built and how]"
+         data-tools="Machining,Metal Fabrication,Design">
+      <div class="card-image" style="background-image: url('img/works/rocket.jpg')"></div>
+      <div class="card-gradient"></div>
+      <div class="card-overlay">
+        <div class="card-overlay-content">
+          <h3 class="card-title">Rocket Press Coffee Maker</h3>
+          <p class="card-desc">Personal Project</p>
+          <span class="card-tag">Hobby</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item eng"
+         data-title="Advanced Forward Osmosis Membrane"
+         data-context="Water Treatment R&amp;D — Porifera"
+         data-problem="[Add: 1-sentence problem description]"
+         data-built="[Add: 2-3 sentences describing what was built and how]"
+         data-tools="SolidWorks,Fluid Systems,Prototyping">
+      <div class="card-image" style="background-image: url('img/works/skids.jpg')"></div>
+      <div class="card-gradient"></div>
+      <div class="card-overlay">
+        <div class="card-overlay-content">
+          <h3 class="card-title">Advanced Forward Osmosis Membrane</h3>
+          <p class="card-desc">Water Treatment R&amp;D — Porifera</p>
+          <span class="card-tag">Engineering</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item indi"
+         data-title="Stand Up Paddleboard"
+         data-context="Personal Project — Wood and Composites"
+         data-problem="[Add: 1-sentence problem description]"
+         data-built="[Add: 2-3 sentences describing what was built and how]"
+         data-tools="Composites,Woodworking,Design">
+      <div class="card-image" style="background-image: url('img/works/sup.jpg')"></div>
+      <div class="card-gradient"></div>
+      <div class="card-overlay">
+        <div class="card-overlay-content">
+          <h3 class="card-title">Stand Up Paddleboard</h3>
+          <p class="card-desc">Wood and Composites</p>
+          <span class="card-tag">Hobby</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid-item eng"
+         data-title="Small Satellite Development"
+         data-context="Boston University"
+         data-problem="[Add: 1-sentence problem description]"
+         data-built="[Add: 2-3 sentences describing what was built and how]"
+         data-tools="SolidWorks,Systems Engineering,Composites">
+      <div class="card-image" style="background-image: url('img/works/busat.jpg')"></div>
+      <div class="card-gradient"></div>
+      <div class="card-overlay">
+        <div class="card-overlay-content">
+          <h3 class="card-title">Small Satellite Development</h3>
+          <p class="card-desc">Boston University</p>
+          <span class="card-tag">Engineering</span>
+          <span class="card-arrow">→</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- ==== Portfolio Section End ==== -->
 
 
 

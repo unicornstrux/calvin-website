@@ -17,22 +17,14 @@ $(window).on('load', function() {
 	/*------------------
 		PORTFOLIO
 	--------------------*/
-	var $container = $('.isotope_items');
-	$container.isotope();
+	var $container = $('.portfolio-grid');
+	$container.isotope({ itemSelector: '.grid-item', layoutMode: 'fitRows' });
 
-	$('.portfolio-filter li').on("click", function(){
-		$(".portfolio-filter li").removeClass("active");
-		$(this).addClass("active");				 
-		var selector = $(this).attr('data-filter');
-		$(".isotope_items").isotope({
-				filter: selector,
-				animationOptions: {
-				duration: 750,
-				easing: 'linear',
-				queue: false,
-			}
-		});
-		return false;
+	$('.pf-btn').on('click', function() {
+		$('.pf-btn').removeClass('active');
+		$(this).addClass('active');
+		var selector = $(this).data('filter');
+		$container.isotope({ filter: selector });
 	});
 
 });
