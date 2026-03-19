@@ -28,3 +28,44 @@ p {
   font-family: 'Inter', sans-serif;
   color: var(--text-muted);
 }
+
+/* ===========================
+   Navigation
+=========================== */
+.header-section {
+  background: transparent;
+  transition: background var(--transition), box-shadow var(--transition);
+}
+
+.header-section.sticky {
+  box-shadow: 0 1px 0 rgba(0,0,0,0.08);
+}
+
+.header-section.sticky .logo h3 {
+  color: var(--text);
+}
+
+.header-section.sticky .menu-list li a {
+  color: var(--text);
+}
+
+.header-section.sticky .menu-list li a:after {
+  background: var(--accent);
+}
+
+.header-section.sticky .menu-list .current a:after {
+  background: var(--accent);
+}
+
+.nav-resume-link {
+  border: 1px solid currentColor;
+  border-radius: 20px;
+  padding: 6px 16px !important;
+  font-size: 11px !important;
+  opacity: 0.85;
+  transition: opacity var(--transition);
+}
+
+.nav-resume-link:hover {
+  opacity: 1;
+}
