@@ -62,15 +62,7 @@ $(window).on('load', function() {
 	});
 
 
-	/*------------------
-  		MOUSE PARALLAX
-  	--------------------*/
-	$('#background-1').mouseParallax({
-		moveFactor: 2
-	});
-
-
-	/*------------------
+/*------------------
 		WOW JS
 	--------------------*/
 	new WOW().init();
