@@ -202,3 +202,126 @@ p {
   color: var(--white);
   margin-top: 8px;
 }
+
+/* ===========================
+   Slide-in Project Panel
+=========================== */
+.project-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 480px;
+  max-width: 100vw;
+  height: 100vh;
+  background: var(--white);
+  z-index: 9000;
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow-y: auto;
+  box-shadow: -4px 0 30px rgba(0,0,0,0.12);
+}
+
+.project-panel.open {
+  transform: translateX(0);
+}
+
+.panel-scrim {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: 8999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.panel-scrim.open {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.panel-close {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--text);
+  line-height: 1;
+  z-index: 10;
+  padding: 4px 8px;
+  transition: opacity var(--transition);
+}
+
+.panel-close:hover {
+  opacity: 0.6;
+}
+
+.panel-image-wrap {
+  width: 100%;
+  height: 260px;
+  overflow: hidden;
+}
+
+.panel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.panel-content {
+  padding: 32px 32px 48px;
+}
+
+.panel-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.panel-context {
+  font-size: 14px;
+  color: var(--accent);
+  margin-bottom: 28px;
+  font-weight: 500;
+}
+
+.panel-section {
+  margin-bottom: 24px;
+}
+
+.panel-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  margin-bottom: 6px;
+}
+
+.panel-text {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text);
+  margin: 0;
+}
+
+.panel-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tool-tag {
+  display: inline-block;
+  background: #F0F0EE;
+  color: var(--text);
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-weight: 500;
+}

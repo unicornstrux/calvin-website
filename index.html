@@ -599,10 +599,38 @@
 	<!-- ==== Footer Section End ==== -->
 
 
-	<!--====== Javascripts & Jquery ======-->	
+	<!-- Slide-in Project Panel -->
+<div id="project-panel" class="project-panel">
+  <button class="panel-close" id="panel-close" aria-label="Close panel">×</button>
+  <div class="panel-inner">
+    <div class="panel-image-wrap">
+      <img id="panel-image" src="" alt="" class="panel-image">
+    </div>
+    <div class="panel-content">
+      <h2 id="panel-title" class="panel-title"></h2>
+      <p id="panel-context" class="panel-context"></p>
+      <div class="panel-section">
+        <h4 class="panel-label">Problem</h4>
+        <p id="panel-problem" class="panel-text"></p>
+      </div>
+      <div class="panel-section">
+        <h4 class="panel-label">What I Built</h4>
+        <p id="panel-built" class="panel-text"></p>
+      </div>
+      <div class="panel-section">
+        <h4 class="panel-label">Skills &amp; Tools</h4>
+        <div id="panel-tools" class="panel-tools"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="panel-scrim" class="panel-scrim"></div>
+
+	<!--====== Javascripts & Jquery ======-->
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/plugin.js"></script>
 	<!-- <script src="js/init-particles.js"></script> -->
 	<script src="js/main.js"></script>
+	<script src="js/portfolio.js"></script>
 </body>
 </html>
