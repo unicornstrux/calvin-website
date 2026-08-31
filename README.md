@@ -1,1 +1,1 @@
-# CalPat.github.io
+# **.github.io
